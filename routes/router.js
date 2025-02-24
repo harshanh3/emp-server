@@ -17,7 +17,7 @@ router.get('/dash',jwtMiddleware,empcontroller.dashboardetailsController)
 //delete 
 router.delete('/emp/:id/remove',jwtMiddleware,empcontroller.removeempController)
 // edit
-// router.put('/emp/:id/edit',jwtMiddleware,multerMiddleware.single('empImg'),empcontroller.editempController)
+router.put('/emp/:id/edit',jwtMiddleware,multerMiddleware.single('empImg'),empcontroller.editEmpController)
 
 
 
