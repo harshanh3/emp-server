@@ -20,6 +20,5 @@ router.delete('/emp/:id/remove',jwtMiddleware,empcontroller.removeempController)
 router.put('/emp/:id/edit',jwtMiddleware,multerMiddleware.single('empImg'),empcontroller.editEmpController)
 
 
-
 module.exports = router
 
